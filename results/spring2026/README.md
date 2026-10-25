@@ -1,6 +1,6 @@
 # Spring 2026 results
 
-These figures and numbers were copied from the cell outputs of [`original/kindness_v1_selfreport_SJTs.ipynb`](../../original/kindness_v1_selfreport_SJTs.ipynb). They aren't regenerated.
+These figures and numbers were copied from the cell outputs of [`original_notebook/kindness_v1_selfreport_SJTs.ipynb`](../../original_notebook/kindness_v1_selfreport_SJTs.ipynb). They aren't regenerated.
 
 Setup: Llama-3.1-8B, Llama-3.3-70B and Qwen3-32B via Groq. The judge is Llama-3.3-70B.
 

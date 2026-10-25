@@ -6,3 +6,4 @@ logs/
 results/latest/
 .ipynb_checkpoints/
 .DS_Store
+.pytest_cache/

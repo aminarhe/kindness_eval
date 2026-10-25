@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kindness-eval-inspect"
+version = "0.1.0"
+description = "How kind is your LLM? Self-report vs. behavioral kindness evals (Inspect AI) and Pythia training-dynamics probes."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Amina Rakhimbergenova" }]
+dependencies = [
+    "inspect-ai>=0.3.200",
+    "groq",
+    "openai",
+    "pandas",
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "seaborn",
+]
+
+[project.optional-dependencies]
+pythia = ["torch", "transformers", "accelerate"]
+dev = ["pytest"]
+
+[project.entry-points.inspect_ai]
+kindness_eval_inspect = "kindness_eval_inspect._registry"
+
+[tool.setuptools.packages.find]
+include = ["kindness_eval_inspect*"]
+
+[tool.setuptools.package-data]
+kindness_eval_inspect = ["data/*.jsonl"]
